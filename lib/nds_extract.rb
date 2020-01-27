@@ -7,8 +7,8 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  result = {"#{directors_database[directors_index][:name]}",
-      "#{director_total}"
+  result = {"#{directors_database[0][:name]}",
+      "0"
   }
   =begin
   directors_index = 0
