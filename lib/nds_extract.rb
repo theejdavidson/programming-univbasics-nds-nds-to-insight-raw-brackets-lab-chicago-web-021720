@@ -10,11 +10,15 @@ def directors_totals(nds)
   result = {
   }
   directors_index = 0
-  while row_index < directors_database.length do
+  while directors_index < directors_database.length do
     film_index = 0
-    while film_index < directors_database[directors_index].length
+    director_total = 0
+    while film_index < directors_database[directors_index][:movies].length do
+      director_total += directors_database[directors_index][:movies][film_index][:worldwide_gross]
       film_index += 1
     end
+    results.store("#{directors_database[directors_index][:name]}",
+      "")
     directors_index += 1
   end
   #
