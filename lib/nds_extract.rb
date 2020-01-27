@@ -18,7 +18,7 @@ def directors_totals(nds)
       film_index += 1
     end
     result.store("#{directors_database[directors_index][:name]}",
-      "")
+      "#{director_total}")
     directors_index += 1
   end
   #
