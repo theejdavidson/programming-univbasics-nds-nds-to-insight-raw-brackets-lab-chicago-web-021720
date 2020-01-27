@@ -10,7 +10,6 @@ def directors_totals(nds)
   result = {"#{directors_database[0][:name]}",
       "0"
   }
-  =begin
   #directors_index = 0
   #while directors_index < directors_database.length do
    # film_index = 0
