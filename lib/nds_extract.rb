@@ -9,12 +9,12 @@ def directors_totals(nds)
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   pp nds
   result = {"#{nds[3][:name]}" => "#{nds[3][:movies][1][:worldwide_gross]}"}
-  #directors_index = 0
-  #while directors_index < directors_database.length do
-   # film_index = 0
-    #director_total = 0
-    #while film_index < directors_database[directors_index][:movies].length do
-     # director_total += directors_database[directors_index][#:movies][film_index][:worldwide_gross]
+  directors_index = 0
+  while directors_index < nds.length do
+    film_index = 0
+    director_total = 0
+    while film_index < nds[directors_index][:movies].length do
+     director_total += directors_database[directors_index][:movies][film_index][:worldwide_gross]
       #film_index += 1
     #end
     #result.store("#{directors_database[directors_index][:name]}",
