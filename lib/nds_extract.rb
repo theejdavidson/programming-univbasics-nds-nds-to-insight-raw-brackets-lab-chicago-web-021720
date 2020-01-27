@@ -10,6 +10,7 @@ def directors_totals(nds)
   result = {"#{directors_database[directors_index][:name]}",
       "#{director_total}"
   }
+  =begin
   directors_index = 0
   while directors_index < directors_database.length do
     film_index = 0
@@ -22,6 +23,7 @@ def directors_totals(nds)
       "#{director_total}")
     directors_index += 1
   end ##
+  =end
   #
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
