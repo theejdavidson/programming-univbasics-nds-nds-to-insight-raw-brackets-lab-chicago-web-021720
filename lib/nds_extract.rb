@@ -17,7 +17,7 @@ def directors_totals(nds)
       director_total += directors_database[directors_index][:movies][film_index][:worldwide_gross]
       film_index += 1
     end
-    results.store("#{directors_database[directors_index][:name]}",
+    result.store("#{directors_database[directors_index][:name]}",
       "")
     directors_index += 1
   end
@@ -30,5 +30,5 @@ def directors_totals(nds)
   #
   #
   # Be sure to return the result at the end!
-  pp nds
+  return result
 end
