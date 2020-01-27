@@ -7,6 +7,7 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
+  pp nds
   result = {"#{nds[0][:name]}" =>
       "0"
   }
